@@ -1,0 +1,162 @@
+/* Common back-to-dashboard button for add pages */
+.btn-back-dashboard {
+    border-radius: 2rem;
+    font-weight: 600;
+    padding: 8px 22px;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+    transition: background 0.2s, color 0.2s, border 0.2s !important;
+    border: 2px solid #007bff !important;
+    color: #007bff !important;
+    background: #fff !important;
+}
+.btn-back-dashboard:hover, .btn-back-dashboard:focus {
+    background: #007bff !important;
+    color: #fff !important;
+    border-color: #0056b3 !important;
+}
+.custom-navbar .button-group {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+/* Show/hide hamburger and button group for mobile */
+@media (max-width: 900px) {
+    .custom-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .custom-navbar .navbar-content {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .custom-navbar .welcome {
+        margin: 0 1rem 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-navbar .navbar-content {
+        flex-direction: row;
+        align-items: center;
+        /* width: 100%; */
+    }
+    .custom-navbar .button-group {
+        flex-direction: row;
+        align-items: end;
+        width: 100%;
+    }
+    .custom-navbar .custom-btn {
+        margin: 0 0 0 10px;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .custom-navbar .button-group {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        min-width: 0;
+    }
+}
+.custom-navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.custom-navbar .brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.custom-navbar .navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar .welcome {
+    color: #fff;
+    margin-right: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.custom-navbar .custom-btn {
+    min-width: 10vw;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    cursor: pointer;
+}
+
+.custom-navbar .btn-light {
+    background: #fff;
+    color: #007bff;
+}
+
+.custom-navbar .btn-light:hover {
+    background: #e6e6e6;
+}
+
+.custom-navbar .btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.custom-navbar .btn-outline:hover {
+    background: #fff;
+    color: #007bff;
+}
+
+.custom-navbar .btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.custom-navbar .btn-primary:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .custom-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .custom-navbar .navbar-content {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .custom-navbar .welcome {
+        margin: 0 0 0.5rem 0;
+    }
+
+    /* .custom-navbar .custom-btn {
+        margin: 0 0 0.5rem 0;
+        width: 100%;
+    } */
+}

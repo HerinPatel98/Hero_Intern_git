@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f0f4ff;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    border-bottom: none;
+    transition: border-bottom ease-in-out 0.2s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #0033cc;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    align-items: stretch;
+}
+
+.menu > li.hover > a::before {
+    visibility: visible;
+    scale: 1 1;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0 40px;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.left h2 span {
+    color: #f39c12;
+}
+
+.left p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.left button {
+    background-color: #0033cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left button:hover {
+    background-color: #002699;
+}
+
+.right {
+    width: 45%;
+    text-align: center;
+}
+
+.rocket {
+    display: block;
+    margin: 0.4em;
+    font-size: 3.5rem;
+}
+
+.illustration {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.apply-btn {
+    background-color: #f39c12;
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: bold;
+    margin: .8em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: #d68910;
+}

@@ -1,0 +1,105 @@
+/* css for login page */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 34vw;
+    text-align: center;
+}
+
+h2 {
+    background: linear-gradient(to right, #fc9426, #fcb126);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    text-align: center;
+    background-color: #eef2ff;
+    box-shadow: 0 2px 4px #ccc inset;
+    width: 90%;
+    padding: 4%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 15px;
+}
+
+input[type="text"]:placeholder-shown,
+input[type="password"]:placeholder-shown {
+    text-align: center;
+    background-color: #eef2ff;
+    box-shadow: 0 2px 4px #ccc inset;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0053ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 1.3s ease-in-out;
+}
+
+button:hover {
+    background: #003bb5;
+    transform: translateY(5)
+}
+
+.message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.0rem;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.rocket {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    display: none;
+}
+
+.db-link {
+    font-size: 1.2rem;
+    border: none;
+    font-weight: bolder;
+    text-decoration: wavy;
+}

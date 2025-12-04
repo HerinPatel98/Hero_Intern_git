@@ -1,0 +1,46 @@
+body {
+    background: #fffbe6;
+}
+
+.update-form {
+    background: #fffde7;
+    border: 2px solid #ffe082;
+    border-radius: 1.2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 2px 12px rgba(255, 193, 7, 0.08);
+}
+
+.form-label {
+    color: #b28704;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #ffe082;
+    box-shadow: 0 0 0 0.2rem #fffde7;
+}
+
+.btn-warning {
+    background: #ffe082;
+    color: #b28704;
+    border: none;
+}
+
+.btn-warning:hover {
+    background: #ffd54f;
+    color: #fff;
+}
+
+.alert-success {
+    background: #fffde7;
+    color: #b28704;
+    border: 1px solid #ffe082;
+}
+
+.alert-danger {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffe082;
+}
