@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="login-container">
         <div class="rocket">🚀</div>
         <h2>Login to Hero Intern</h2>
-        <p>Access your internship portal</p>
+        <p>Access your internship portal or <a onclick="history.back()" style="color: blue; cursor: pointer;">Go Back</a></p>
         <form method="POST">
             <input type="text" name="username" placeholder="Username" autocomplete required />
             <input type="password" name="password" placeholder="Password" required />
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <br>
             <a href="./dashboard.php" class="db-link"> Go to Dashboard </a>
             </div>
-        <?php elseif ($loginError): ?>
+        <?php elseif ($loginError == true): ?>
             <div class="message error">❌ Invalid username or password.</div>
         <?php endif; ?>
     </div>
