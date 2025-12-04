@@ -13,7 +13,7 @@
         <nav>
             <ul class="menu">
                 <li> <a href="#">Home</a> </li>
-                <li> <a href="#">About</a></li>
+                <li> <a href="../admin/admin_login.php">Admin</a></li>
                 <li> <a href="#">Contact Us</a></li>
                 <li> <a href="#">FAQs</a></li>
                 <li> <a href="#">Careers</a></li>

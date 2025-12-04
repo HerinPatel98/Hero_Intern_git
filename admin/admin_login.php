@@ -80,6 +80,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             width: 94%;
         }
 
+        a {
+            color: blue;
+        }
+
         .login-container button:hover {
             background: #0056b3;
         }
@@ -112,6 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
         <?php if (isset($error_message)) { echo "<div class='alert alert-danger'>$error_message</div>"; } ?>
         <p>Welcome back, Admin! Please log in to continue.</p>
+        <p>Cancel login. <a onclick="history.back()">Go Back</a></p>
     </div>
 </body>
 
