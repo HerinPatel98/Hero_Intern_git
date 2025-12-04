@@ -52,11 +52,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-bottom: 20px;
             font-size: 1.8rem;
             color: #333;
+            cursor: default;
         }
 
         .login-container .logo {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            cursor: default;
         }
 
         .login-container input {
@@ -80,10 +82,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             width: 94%;
         }
 
-        a {
-            color: blue;
-        }
-
         .login-container button:hover {
             background: #0056b3;
         }
@@ -92,6 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-top: 15px;
             font-size: 0.9rem;
             color: #6c757d;
+            cursor: default;
         }
 
         .alert {
@@ -116,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
         <?php if (isset($error_message)) { echo "<div class='alert alert-danger'>$error_message</div>"; } ?>
         <p>Welcome back, Admin! Please log in to continue.</p>
-        <p>Cancel login. <a onclick="history.back()">Go Back</a></p>
+        <p>Cancel login. <a onclick="history.back()" style="color: blue; cursor: pointer;">Go Back</a></p>
     </div>
 </body>
 
